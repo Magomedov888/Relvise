@@ -143,7 +143,12 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
     padding: 184px 0px 191px 0px;
     position: relative;
     z-index: 2;
-    max-width: 509px;
+    max-width: 400px;
+}
+@media (max-width: 992px) {
+    .main-block__body {
+        padding: 120px 0px 191px 0px;
+    }
 }
 .main-block__body > *:not(:last-child) {
     margin: 0px 0px 35px 0px;
@@ -151,7 +156,13 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 .main-block__title {
     font-size: 58px;
     line-height: calc(80 / 58 * 100%);
-    font-weight: 800;
+    letter-spacing: 0.2px;
+    font-weight: 800;    
+}
+@media (max-width: 479px) {
+    .main-block__title {
+        font-size: 42px;
+    }
 }
 .main-block__text {
     font-size: 20px;
@@ -159,11 +170,47 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
     font-weight: 500;
     color: #737373;
 }
+@media (max-width: 479px) {
+    .main-block__text {color: #525050;}
+}
 .main-block__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px 0;
 }
 .main-block__button {
+    border-radius: 37px;
+    display: flex;
+    min-height: 48px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 36px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    margin: 10px 0;
+}
+@media (max-width: 479px) {
+    .main-block__button {
+        flex: 1 1 100%;
+    }
+}
+@media (min-width: 479px) {
+    .main-block__button:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+.main-block__button:not(:last-child) {
+    margin-right: 10px;
+}
+.main-block__button_orange {
+    background: #FF7B47;
+    color: #FFFFFF;
 }
 .main-block__button_border {
+    color: #0D5C63;
+    border: 1px solid #0D5C63;
 }
 .main-block__image {
     position: absolute;
@@ -171,4 +218,14 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
     height: 100%;
     top: 0;
     left: 0;
+}
+@media (max-width: 1300px) {
+    .main-block__image img {
+        object-position: right;
+    }
+}
+@media (max-width: 992px) {
+    .main-block__image {
+        opacity: 0.5;
+    }
 }
