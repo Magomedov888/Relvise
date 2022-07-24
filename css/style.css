@@ -124,8 +124,16 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
         font-size: 18px;
     }
 }
+/*-------page-------------------------------------------------------------*/
 .page {
     flex: 1 1 auto;
+}
+.page__main-block {
+}
+.page__services {
+    position: relative;
+    z-index: 2;
+    margin: -111px 0px 0px 0px;
 }
 /*---подвал------------------------------------------------------------*/
 .footer {
@@ -134,8 +142,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 /*---main-block------------------------------------------------------------*/
 .main-block {
     position: relative;
-}
-.main-block {
+
 }
 .main-block__container {
 }
@@ -148,6 +155,11 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 @media (max-width: 992px) {
     .main-block__body {
         padding: 120px 0px 191px 0px;
+    }
+}
+@media (max-width: 479px) {
+    .main-block__body {
+        padding: 115px 0px 160px 0px;
     }
 }
 .main-block__body > *:not(:last-child) {
@@ -228,4 +240,75 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
     .main-block__image {
         opacity: 0.5;
     }
+}
+/*-----services--------------------------------------------*/
+
+.services {
+}
+.services__container {
+}
+.services__body {
+}
+@media (min-width: 670px) {
+    .services__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -15px;
+    }
+}
+.services__column {
+    flex: 0 1 33.333%;
+}
+@media (min-width: 670px) {
+    .services__column {
+        padding: 0px 15px;
+    }
+}
+@media (max-width: 992px) {
+    .services__column {
+        flex: 0 1 50%;
+    }
+    .services__column:not(:last-child) {
+        margin: 0px 0px 30px 0px;
+    }
+    .services__column:last-child {
+        flex: 1 1 100%;
+    }
+}
+.services__item {
+    height: 100%;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    background-color: #fff;
+    padding: 35px;
+}
+@media (max-width: 479px) {
+    .services__item {
+        padding: 25px;
+    }
+}
+.item-sevices {
+}
+.item-service_green {
+    background-color: #0D5C63;
+}
+.item-service_green .item-service__title {
+    color: #fff;
+}
+.item-service_green .itme-service__text {
+    color: #fff;
+}
+.item-sevices > *:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+.item-service__icon {
+}
+.item-service__title {
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    font-size: 24px;
+    line-height: 133%;
+}
+.itme-service__text {
+    line-height: 142%;
+    color: #737373;
 }
