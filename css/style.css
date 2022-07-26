@@ -141,6 +141,8 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 }
 .page__whoweare {
 }
+.page__clients {
+}
 /*----header block--------------------------------------------------------------------*/
 .header-block {
     text-align: center;
@@ -612,4 +614,24 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
     .whoweare__video:not(:last-child) {
         margin: 30px 0px 0px 0px;
     }
+}
+/* ----clients---------------------------------------------------------------------------- */
+.clients {
+    padding: 50px 0;
+}
+.clients__contaiener {
+}
+.clients__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.clients__item {
+    padding: 8px 15px;
+    flex:  0 1 16.6667%;
+    text-align: center;
+}
+.clients__item img {
+    max-width: 100%;
 }
