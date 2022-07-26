@@ -524,7 +524,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 }
 .whoweare__content {
     flex: 1 1 auto;
-    padding: 20px 0px 0px 120px;
+    padding: 20px 0px 0px 121px;
 }
 .whoweare__title {
     font-weight: 700;
@@ -619,6 +619,11 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 .clients {
     padding: 50px 0;
 }
+@media (max-width: 767px) {
+    .clients {
+        padding: 30px 0;
+    }
+}
 .clients__contaiener {
 }
 .clients__items {
@@ -631,6 +636,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
     padding: 8px 15px;
     flex:  0 1 16.6667%;
     text-align: center;
+    min-width: 140px;
 }
 .clients__item img {
     max-width: 100%;
